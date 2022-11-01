@@ -1,0 +1,17 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/variables.scss';
+
+.cardapio-wrapper {
+    background-color: $background;
+    margin-bottom: $marginBottom;
+    padding: 6rem 0;
+    border-radius: 0;
+    .cardapio {
+        @include max-width;
+        .items{
+            display: grid;
+            gap: 8rem;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        }
+    }
+ }
