@@ -6,6 +6,7 @@ import Cardapio from '../src/Components/Cardapio/Cardapio';
 import Reviews from '../src/Components/Reviews/Reviews';
 import Menu from '../src/Components/Menu/Menu';
 import Topo from '../src/Components/Topo/Topo';
+import Footer from "../src/Components/Footer/Footer";
 
 
 
@@ -23,6 +24,7 @@ export default function Home({header, benefits, about, cardapio, reviews, locati
     <Reviews reviews={reviews} />
     <ImageText data={location} />
     <Menu menu={menu} />
+    <Footer />
     </main>
     </>
   )

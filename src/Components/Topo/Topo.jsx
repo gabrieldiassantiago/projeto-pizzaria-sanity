@@ -10,10 +10,6 @@ const Navbar = () => {
   const [isNavbarShow, setIsNavbarShow] = useState(false);
   const [isMenu, setIsMenu] = useState(false);
 
-  if (isNavbarShow == true) {
-    console.log('ok')
-  }
-
   useEffect(() => {
     const setNavbarHandler = () => {
       if (window.scrollY >= 600) return setIsNavbarShow(true);
