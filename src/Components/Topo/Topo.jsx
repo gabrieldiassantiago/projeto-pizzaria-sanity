@@ -4,7 +4,6 @@ import Navlinks from './Navlinks';
 import { useEffect, useState } from 'react';
 
 import logo from './logo.png';
-import { GiHamburgerMenu } from 'react-icons/gi';
 
 const Navbar = () => {
   const [isNavbarShow, setIsNavbarShow] = useState(false);
@@ -38,7 +37,6 @@ const Navbar = () => {
           <Navlinks toggleMenu={null} />
         </nav>
 
-        <GiHamburgerMenu className={styles.icon} onClick={toggleMenuHandler} />
         <nav className={`${styles.burger} ${isMenu && styles.active}`}>
           <Navlinks toggleMenu={toggleMenuHandler} />
         </nav>
